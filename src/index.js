@@ -12,7 +12,7 @@ app.use(express.json());
 
 //Routes
 app.use("/api/auth", authRoutes);
-app.use("api/user", userRoutes);
+app.use("/api/user", userRoutes);
 
 //START SERVER
 const port = process.env.PORT || 3000;
